@@ -7,7 +7,8 @@ RUN apt-get remove -y postgresql postgresql-contrib redis-server
 # RUN mkdir -p "$DATA_DIR" && \
 #     chown -R 9999:9999 "$DATA_DIR"
 
-# COPY deploy/heroku/heroku_env.sh /baserow/supervisor/env/heroku_env.sh
+COPY deploy/render/render_env.sh /baserow/supervisor/env/render_env.sh
+
 
 ENTRYPOINT ["/baserow.sh"]
 CMD ["start"]
