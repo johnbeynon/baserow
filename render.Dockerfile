@@ -13,5 +13,5 @@ RUN apt-get remove -y postgresql postgresql-contrib redis-server
 
 # COPY deploy/heroku/heroku_env.sh /baserow/supervisor/env/heroku_env.sh
 
-ENTRYPOINT []
-CMD []
+# ENTRYPOINT []
+# CMD []
