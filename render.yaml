@@ -3,6 +3,7 @@ services:
     name: baserow
     env: docker
     dockerfilePath: render.Dockerfile
+    dockerCommand: ./baserow.sh start
     envVars:
     - key: SECRET_KEY
       generateValue: true
