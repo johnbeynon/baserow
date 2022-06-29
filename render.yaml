@@ -3,12 +3,10 @@ services:
     name: baserow
     env: docker
     plan: starter plus
-    dockerfilePath: render.Dockerfile
+    dockerfilePath: ./deploy/render/render.Dockerfile
     envVars:
     - key: SECRET_KEY
       generateValue: true
-    - key: PORT
-      value: 10000
     - key: REDIS_URL
       fromService:
         type: redis
