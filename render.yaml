@@ -2,6 +2,7 @@ services:
   - type: web
     name: baserow
     env: docker
+    plan: starter plus
     dockerfilePath: render.Dockerfile
     envVars:
     - key: SECRET_KEY
